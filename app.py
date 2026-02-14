@@ -39,6 +39,9 @@ if build_scatter: # se a caixa for selecionada
         xaxis_title="Modelo de Veículo",
         yaxis_title="Odômetro"
     )#Titulos,Eixos, etc.
-    fig.update_layout(width=1000, height=800) #Aumentando o tamanho do grafico.
+    fig.update_layout(
+    autosize=True,  # Permite redimensionamento automático
+    margin=dict(l=50, r=50, t=50, b=50),
+    ) #Redimencionando o tamanho do grafico.
     st.plotly_chart(fig, use_container_width=True) #exibindo
  
