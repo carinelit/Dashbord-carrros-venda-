@@ -25,7 +25,7 @@ if build_histogram: #se essa caixa for selecionada.
 build_scatter = st.checkbox('Criando um gráfico de dispersão entre Modelo de Carro VS Odômetro')
 
 if build_scatter: # se a caixa for selecionada
-    st.write('Criando um gráfico de dispersão para ver se a qualidade do modelo tem relação com o odômetro.')
+    st.write('Criando um gráfico de dispersão para ver seo modelo tem relação com o odômetro.')
     fig = px.scatter(
         car_data,
         x= "model",
