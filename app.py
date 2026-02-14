@@ -42,6 +42,7 @@ if build_scatter: # se a caixa for selecionada
     fig.update_layout(
     autosize=True,  # Permite redimensionamento automático
     margin=dict(l=50, r=50, t=50, b=50),
+    width=1000
     ) #Redimencionando o tamanho do grafico.
     st.plotly_chart(fig, use_container_width=True) #exibindo
  
