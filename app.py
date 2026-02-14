@@ -7,7 +7,7 @@ car_data = pd.read_csv('vehicles.csv') #lendo os dados do arquivo.
 
 build_histogram = st.checkbox('Click para criar uma histograma que compare as Condição do Veículo Vs Preço.')
 if build_histogram: #se essa caixa for selecionada.
- st.header('Comparações de carros anúnciados para venda') #titulo do dashboard.
+st.header('Comparações de carros anúnciados para venda') #titulo do dashboard.
 st.write('Criando histograma comparando as Condições do Veículo anúnciados VS o preço.') #o que acontece se clincar no botão.
 fig = px.histogram(
        car_data,
@@ -26,7 +26,7 @@ st.plotly_chart(fig , use_container_width=True)#exibindo o grafico em streamlit
 build_scatter = st.checkbox('Criando um gráfico de dispersão entre Modelo de Carro VS Odômetro')
 
 if build_scatter: # se a caixa for selecionada
- st.write('Criando um gráfico de dispersão para ver se a qua')
+st.write('Criando um gráfico de dispersão para ver se a qua')
 fig = px.scatter(
     car_data,
     x= "model",
