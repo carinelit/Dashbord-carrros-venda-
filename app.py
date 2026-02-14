@@ -7,7 +7,7 @@ car_data = pd.read_csv('vehicles.csv') #lendo os dados do arquivo.
 
 build_histogram = st.checkbox('Click para criar uma histograma que compare as Condição do Veículo Vs Preço.')
 if build_histogram: #se essa caixa for selecionada.
-    st.header('Comparações de carros anúnciados para venda') #titulo do dashboard.
+st.header('Comparações de carros anúnciados para venda') #titulo do dashboard.
     st.write('Criando histograma comparando as Condições do Veículo anúnciados VS o preço.') #o que acontece se clincar no botão.
     fig = px.histogram(
         car_data,
