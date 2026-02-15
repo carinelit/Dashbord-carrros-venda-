@@ -28,16 +28,14 @@ if build_scatter: # se a caixa for selecionada
     st.write('Criando um gráfico de dispersão para ver seo modelo tem relação com o odômetro.')
     fig = px.scatter(
         car_data,
-        x= "model",
-        y="odometer",
-        color='model',
-        color_discrete_sequence=px.colors.qualitative.Set1
-    )#Criando um gráfico de dispersão para ver se a qualidade do modelo tem relação com o odômetro.
+        x= "odometer",
+        y="price"
+        )#Criando um gráfico de dispersão para ver se a qualidade do modelo tem relação com o odômetro.
     fig.update_layout(
         xaxis_tickangle=45,
-        title= "Relação entre Modelo e Odômetro",
-        xaxis_title="Modelo de Veículo",
-        yaxis_title="Odômetro"
+        title= "Relação entre Odômetro e Preço",
+        xaxis_title="Odômetro",
+        yaxis_title="Preço"
     )#Titulos,Eixos, etc.
     fig.update_layout(
     autosize=True,  # Permite redimensionamento automático
