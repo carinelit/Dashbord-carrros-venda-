@@ -22,10 +22,10 @@ if build_histogram: #se essa caixa for selecionada.
     )#Eixos, etc.
     st.plotly_chart(fig , use_container_width=True)#exibindo o grafico em streamlit
 
-build_scatter = st.checkbox('Criando um gráfico de dispersão entre Modelo de Carro VS Odômetro')
+build_scatter = st.checkbox('Criando um gráfico de dispersão entre o odômetro e o preço dos veículos.')
 
 if build_scatter: # se a caixa for selecionada
-    st.write('Criando um gráfico de dispersão para ver seo modelo tem relação com o odômetro.')
+    st.write('Criando um gráfico de dispersão para ver a relação entre odômetro e preço.')
     fig = px.scatter(
         car_data,
         x= "odometer",
